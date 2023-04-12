@@ -6,16 +6,16 @@
 
 - The files in src/data are used to process the dataset
 
-- src/loss stores the loss function
-- src/model houses the proposed model and the tool classes for calculating the number of parameters and visualizing them
-- src/main.py is the primary function
-- src/option.py is set for the training/test parameter
-- src/template.py provides training/testing templates
-- src/trainer.py is the training code
-- src/ Utility.py is a utility class
-- src/videotester.py is used to process video
+- **src/loss** stores the loss function
+- **src/model** houses the proposed model and the tool classes for calculating the number of parameters and visualizing them
+- **src/main.py** is the primary function
+- **src/option.py** is set for the training/test parameter
+- **src/template.py** provides training/testing templates
+- **src/trainer.py** is the training code
+- **src/ utility.py** is a utility class
+- **src/videotester.py** is used to process video
 
-In test, PSNR and SSIM are used to test SR image, and can also be used for data set generation. The running environment is matlab
+In **test/**, PSNR and SSIM are used to test SR image, and can also be used for data set generation. The running environment is matlab
 
 ## Dependencies
 
@@ -91,14 +91,14 @@ python main.py --scale 4 --save MFRAN_x4 --model MFRAN --epoch 1000 --batch_size
 
 You can download pretrain model from 
 
-https://pan.baidu.com/s/1ZjkL3s85u8jmEX4ZvX7K3Q 
-Extract code：audx
+链接：https://pan.baidu.com/s/1AdqwG6y1CCi0rJk8_zjrTQ 
+Extract code：mjnp
 
 You can test our super-resolution algorithm with your images. Place your images in ``test`` folder. (like ``test/<your_image>``) We support **png** and **jpeg** files.
 
 ```bash
 cd src    
-python main.py --template MFRAN_test --data_test Set5+Set14+B100+Urban100+Manga109 --save MFRAN_x2_result --pre_train weight/MFRAN-4x.pt
+python main.py --template MFRAN_test --data_test Set5+Set14+B100+Urban100+Manga109 --save MFRAN_x2_result --pre_train weight/MFRAN-2x.pt
 ```
 
 or
@@ -117,12 +117,23 @@ Meanwhile，you can test your results with another method，which is based RCAN�
 >
 > run Evaluate_PSNR_SSIM.m
 
+If you want to calculate the number of model parameters, execute the following command:
+
+```python
+cd src/model
+python cal_params.py
+```
+
+
+
 ## Results
+
+We have published test records, detailed in **results/**
 
 you can download our results form here:
 
-[https://pan.baidu.com/s/1WmZP9zttwrwFI8LIjINggQ 
-Extract code：4zxe]()
+https://pan.baidu.com/s/1sjf0TnQh-IwY33L5tSijxw 
+Extract code：40y9
 
 
 
