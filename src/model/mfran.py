@@ -48,26 +48,27 @@ class MFRAN(nn.Module):
         x = self.head(x)
         res = x
 
-        MSFFRB_out = []
+        sf = []
         for i in range(self.n_blocks // 2):
             x = self.body[i](x)
-            MSFFRB_out.append(x)
-        MSFFRB_out.append(res)
+            sf.append(x)
+        sf.append(res)
         res2 = x
-        x = torch.cat(MSFFRB_out, 1)
+        x = torch.cat(sf, 1)
         x = self.adjust(x)
         mid = x
         x = mid
 
-        MSFFRB_out2 = []
+        df = []
         for i in range(self.n_blocks // 2):
             x = self.body[i](x)
-            MSFFRB_out2.append(x)
-        MSFFRB_out2.append(res2)
-        res = torch.cat(MSFFRB_out2, 1)
+            df.append(x)
+        df.append(res2)
+        res = torch.cat(df, 1)
         x = self.adjust(res)
         mid2 = x
         mid2 += mid
+        
         x = self.tail(mid2)
         x = self.add_mean(x)
         return x
