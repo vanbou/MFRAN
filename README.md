@@ -4,7 +4,7 @@
 
 ## Introduction
 
-- The files in **src/data** are used to process the dataset
+- **src/data** are used to process the dataset
 
 - **src/loss** stores the loss function
 - **src/model** sotres the proposed model and the tool classes for calculating the number of parameters
