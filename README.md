@@ -4,15 +4,16 @@
 
 ## Introduction
 
-The files in src/data are used to process the data set
-src/loss stores the loss function
-src/model houses the proposed model and the tool classes for calculating the number of parameters and visualizing them
-src/main.py is the primary function
-src/option.py is set for the training/test parameter
-src/template.py provides training/testing templates
-src/trainer.py is the training code
-src/ Utility.py is a utility class
-src/videotester.py is used to process video
+- The files in src/data are used to process the dataset
+
+- src/loss stores the loss function
+- src/model houses the proposed model and the tool classes for calculating the number of parameters and visualizing them
+- src/main.py is the primary function
+- src/option.py is set for the training/test parameter
+- src/template.py provides training/testing templates
+- src/trainer.py is the training code
+- src/ Utility.py is a utility class
+- src/videotester.py is used to process video
 
 In test, PSNR and SSIM are used to test SR image, and can also be used for data set generation. The running environment is matlab
 
