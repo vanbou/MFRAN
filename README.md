@@ -4,15 +4,15 @@
 
 ## Introduction
 
-- The files in src/data are used to process the dataset
+- The files in **src/data** are used to process the dataset
 
 - **src/loss** stores the loss function
-- **src/model** houses the proposed model and the tool classes for calculating the number of parameters and visualizing them
-- **src/main.py** is the primary function
+- **src/model** sotres the proposed model and the tool classes for calculating the number of parameters
+- **src/main.py** is the main function
 - **src/option.py** is set for the training/test parameter
 - **src/template.py** provides training/testing templates
 - **src/trainer.py** is the training code
-- **src/ utility.py** is a utility class
+- **src/utility.py** is a utility class
 - **src/videotester.py** is used to process video
 
 In **test/**, PSNR and SSIM are used to test SR image, and can also be used for data set generation. The running environment is matlab
@@ -91,7 +91,7 @@ python main.py --scale 4 --save MFRAN_x4 --model MFRAN --epoch 1000 --batch_size
 
 You can download pretrain model from 
 
-链接：https://pan.baidu.com/s/1AdqwG6y1CCi0rJk8_zjrTQ 
+https://pan.baidu.com/s/1AdqwG6y1CCi0rJk8_zjrTQ 
 Extract code：mjnp
 
 You can test our super-resolution algorithm with your images. Place your images in ``test`` folder. (like ``test/<your_image>``) We support **png** and **jpeg** files.
