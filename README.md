@@ -2,7 +2,19 @@
 
 [Image super-resolution with multi-scale fractal residual attention network]([[vanbou/MFRAN (github.com)](https://github.com/vanbou/MFRAN))), Xiaogang Song, Wanbo Liu, Li Liang, Weiwei Shi, Guo Xie, Xiaofeng Lu, Xinhong Hei
 
+## Introduction
 
+The files in src/data are used to process the data set
+src/loss stores the loss function
+src/model houses the proposed model and the tool classes for calculating the number of parameters and visualizing them
+src/main.py is the primary function
+src/option.py is set for the training/test parameter
+src/template.py provides training/testing templates
+src/trainer.py is the training code
+src/ Utility.py is a utility class
+src/videotester.py is used to process video
+
+In test, PSNR and SSIM are used to test SR image, and can also be used for data set generation. The running environment is matlab
 
 ## Dependencies
 
@@ -51,7 +63,7 @@ If you have enough RAM (>= 32GB), you can use ``--ext bin`` argument to pack all
 ## How  To Train
 
 ```python
-cd src    
+cd src   
 ```
 
 For ×2
@@ -98,7 +110,11 @@ if you want to test DIV2K, add --data_range 801-900, if you need test self-ensem
 
 You can find the result images from ```experiment/``` folder.
 
+Meanwhile，you can test your results with another method，which is based RCAN：
 
+> cd test
+>
+> run Evaluate_PSNR_SSIM.m
 
 ## Results
 
