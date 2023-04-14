@@ -124,7 +124,7 @@ cd src/model
 python cal_params.py
 ```
 
-
+To test the number of MFRAN parameters for different scaling factors, change  **--scale** in **option.py**
 
 ## Results
 
@@ -139,4 +139,4 @@ Extract code：40y9
 
 ## Appreciate
 
-Our work is based on EDSR([sanghyun-son/EDSR-PyTorch: PyTorch version of the paper 'Enhanced Deep Residual Networks for Single Image Super-Resolution' (CVPRW 2017) (github.com)](https://github.com/sanghyun-son/EDSR-PyTorch)) and RCAN([yulunzhang/RCAN: PyTorch code for our ECCV 2018 paper "Image Super-Resolution Using Very Deep Residual Channel Attention Networks" (github.com)](https://github.com/yulunzhang/RCAN)) libraries. Thank you for your contributions
+Our work is based on [EDSR](https://github.com/sanghyun-son/EDSR-PyTorch) and [RCAN]](https://github.com/yulunzhang/RCAN) . Thank you for your contributions
