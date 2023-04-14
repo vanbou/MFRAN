@@ -2,6 +2,8 @@
 
 [Image super-resolution with multi-scale fractal residual attention network]([[vanbou/MFRAN (github.com)](https://github.com/vanbou/MFRAN))), Xiaogang Song, Wanbo Liu, Li Liang, Weiwei Shi, Guo Xie, Xiaofeng Lu, Xinhong Hei
 
+![Graphical abstract](results/Graphical_abstract.png)
+
 ## Introduction
 
 - **src/data** are used to process the dataset
