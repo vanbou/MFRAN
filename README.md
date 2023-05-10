@@ -52,7 +52,7 @@ You can evaluate your models with widely-used benchmark datasets:
 For these datasets, we first convert the result images to YCbCr color space and evaluate PSNR on the Y channel only. You can download [benchmark datasets](https://cv.snu.ac.kr/research/EDSR/benchmark.tar) (250MB), you can also download from https://pan.baidu.com/s/1iX46n5fdNix3J0ANN0FItg Extract code：49mx
 or GoogleDrive https://drive.google.com/file/d/1-A7mMAr9chY3-aM9UlwHKszhtCtWmeqM/view?usp=sharing
 
-Set ``--dir_data <where_benchmark_folder_located>`` to evaluate the MFRAN with the benchmarks.  
+Set ``--dir_demo <where_benchmark_folder_located>`` to evaluate the MFRAN with the benchmarks.  
 
 We used [DIV2K](http://www.vision.ee.ethz.ch/%7Etimofter/publications/Agustsson-CVPRW-2017.pdf) dataset to train our model. Please download it from [here](https://cv.snu.ac.kr/research/EDSR/DIV2K.tar) (7.1GB).
 
@@ -62,7 +62,9 @@ We recommend you to pre-process the images before training. This step will decod
 
 If you have enough RAM (>= 32GB), you can use ``--ext bin`` argument to pack all DIV2K images in one binary file.
 
+After downloading the training set and the test set, copy the absolute path of DIV2K and fill it with --dir_data in option.py. 
 
+Meanwhile, fill the absolute path of benchmark with --dir_demo in option.py
 
 ## How  To Train
 
@@ -70,25 +72,15 @@ If you have enough RAM (>= 32GB), you can use ``--ext bin`` argument to pack all
 cd src   
 ```
 
-For ×2
+Run command:
 
 ```python
 python main.py --scale 2 --save MFRAN_x2 --model MFRAN --epoch 1000 --batch_size 16 --patch_size 96
 ```
 
-For ×3
+For different scale factors, change --scale (2,3,4) and patch-size(96,144,192), patch-size=48*(scale factor)
 
-```python
-python main.py --scale 3 --save MFRAN_x3 --model MFRAN --epoch 1000 --batch_size 16 --patch_size 144
-```
-
-For ×4
-
-```python
-python main.py --scale 4 --save MFRAN_x4 --model MFRAN --epoch 1000 --batch_size 16 --patch_size 192
-```
-
-
+After downloading the training set and the test set, copy the absolute path of DIV2K and fill it with --dir_data in option.py. Likewise, fill the absolute path of benchmark with --dir_demo in option.py
 
 ## How  To Test
 
