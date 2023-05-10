@@ -49,7 +49,8 @@ git clone https://github.com/vanbou/MFRAN
 
 You can evaluate your models with widely-used benchmark datasets:
 
-For these datasets, we first convert the result images to YCbCr color space and evaluate PSNR on the Y channel only. You can download [benchmark datasets](https://cv.snu.ac.kr/research/EDSR/benchmark.tar) (250MB), you can also download from https://pan.baidu.com/s/1iX46n5fdNix3J0ANN0FItg Extract code：49mx. 
+For these datasets, we first convert the result images to YCbCr color space and evaluate PSNR on the Y channel only. You can download [benchmark datasets](https://cv.snu.ac.kr/research/EDSR/benchmark.tar) (250MB), you can also download from https://pan.baidu.com/s/1iX46n5fdNix3J0ANN0FItg Extract code：49mx
+or GoogleDrive https://drive.google.com/file/d/1-A7mMAr9chY3-aM9UlwHKszhtCtWmeqM/view?usp=sharing
 
 Set ``--dir_data <where_benchmark_folder_located>`` to evaluate the MFRAN with the benchmarks.  
 
@@ -95,6 +96,8 @@ You can download pretrain model from
 
 https://pan.baidu.com/s/1AdqwG6y1CCi0rJk8_zjrTQ 
 Extract code：mjnp
+or Google Drive
+https://drive.google.com/file/d/1-CcEonXdh5-c3M5JYcVJsNwJilRCKM-B/view?usp=sharing
 
 You can test our super-resolution algorithm with your images. Place your images in ``test`` folder. (like ``test/<your_image>``) We support **png** and **jpeg** files.
 
@@ -134,9 +137,12 @@ We have published test records, detailed in **results/**
 
 you can download our results form here:
 
+Baidu Netdisk：
 https://pan.baidu.com/s/1sjf0TnQh-IwY33L5tSijxw 
 Extract code：40y9
 
+Google Drive：
+https://drive.google.com/file/d/1-FV5AE7yGiqcPbvjk5iGLLEwM6zKwtUd/view?usp=sharing
 
 
 ## Appreciate
